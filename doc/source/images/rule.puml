@@ -1,0 +1,24 @@
+@startuml
+
+component "Rule" as rule
+component "Trigger" as trigger
+component "Condition" as condition
+component "Action" as action
+
+rule -> trigger
+rule -> condition
+rule -> action
+
+component "Operator" as operator
+component "Operand" as operand
+component "URI" as uri
+component "DB" as db
+
+condition -> operator
+condition -> operand
+
+condition -> uri
+condition -> db
+
+
+@enduml
